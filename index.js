@@ -19,6 +19,6 @@ app.use('/graphql',
 );
 
 app.listen(4000, () => {
-    setTimeout(getData, 3000);
+    setInterval(getData, 3000);
     console.log('Go to http://localhost:4000/graphiql to run queries!');
 });
